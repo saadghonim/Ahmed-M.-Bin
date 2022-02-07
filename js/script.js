@@ -5,10 +5,14 @@ $(document).ready(function(){
     $(".bars_").click(function(){
       $("nav").toggle(500);
       $(".moboverlay").toggle(500);
+      $("body").addClass("over_");
+
     });
     $(".close_,.moboverlay").click(function(){
       $("nav").toggle(500);
       $(".moboverlay").toggle(500);
+      $("body").removeClass("over_");
+
     });
     $(".hover_menu>a").click(function(){
       $(".ul_menu").slideToggle(500);

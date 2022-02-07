@@ -89,7 +89,7 @@ img {
 }
 
 .over_ {
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 ::-webkit-scrollbar {
