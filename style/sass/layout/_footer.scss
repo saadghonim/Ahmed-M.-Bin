@@ -185,18 +185,20 @@ footer{
 
 
 @include xs{
-  .copyright{
-    flex-direction: column;
-    padding: 20px 0 25px;
-
-    .copy_t{
-      text-align:center;
-      text-align-last: center;
-    }
-    p{
-      margin: 0;
-      &:first-child{
-        margin-bottom: 10px;
+  .copyright_parant{
+    .copyright{
+      flex-direction: column;
+      padding: 20px 0 20px;
+  
+      .copy_t{
+        text-align:center;
+        text-align-last: center;
+      }
+      p{
+        margin: 0;
+        &:first-child{
+          margin-bottom: 10px;
+        }
       }
     }
   }

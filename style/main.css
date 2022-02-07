@@ -226,7 +226,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .about_us_parant .about_us h3 {
-    font-size: 27px;
+    font-size: 25px;
   }
 }
 
@@ -346,7 +346,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .services_parant h3 {
-    font-size: 27px;
+    font-size: 25px;
   }
 }
 
@@ -456,7 +456,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .contact_us_parant h3 {
-    font-size: 27px;
+    font-size: 25px;
   }
 }
 
@@ -494,7 +494,7 @@ img {
 
 @media only screen and (max-width: 500px) and (max-width: 500px) {
   .contact_us_parant h3 {
-    font-size: 27px;
+    font-size: 25px;
   }
 }
 
@@ -520,7 +520,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .clients_parant h3 {
-    font-size: 27px;
+    font-size: 25px;
   }
 }
 
@@ -582,6 +582,32 @@ img {
   .clients .clients_logos {
     display: block;
   }
+  .clients .clients_logos .owl-dots {
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+            transform: translatex(-50%);
+    color: #9b702a;
+    z-index: 9999;
+  }
+  .clients .clients_logos .owl-dots .owl-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #212121;
+    opacity: 0.5;
+    -webkit-margin-end: 5px;
+            margin-inline-end: 5px;
+  }
+  .clients .clients_logos .owl-dots .active {
+    background-color: #ad7d2f;
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    outline: 0;
+  }
   .clients .clients_logos a {
     height: 160px;
     width: auto;
@@ -621,7 +647,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .join_us_parant .join_us h3 {
-    font-size: 27px;
+    font-size: 25px;
   }
 }
 
@@ -673,6 +699,7 @@ img {
 @media only screen and (max-width: 767px) {
   .join_us_parant {
     padding: 70px 0 80px;
+    background-position: center;
   }
   .join_us_parant .join_us h3 {
     margin-bottom: 20px;
@@ -893,21 +920,21 @@ footer .f_div .ul_list p {
 }
 
 @media only screen and (max-width: 767px) {
-  .copyright {
+  .copyright_parant .copyright {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 20px 0 25px;
+    padding: 20px 0 20px;
   }
-  .copyright .copy_t, .copyright_parant .copyright .tasawk {
+  .copyright_parant .copyright .copy_t, .copyright_parant .copyright .tasawk {
     text-align: center;
     text-align-last: center;
   }
-  .copyright p {
+  .copyright_parant .copyright p {
     margin: 0;
   }
-  .copyright p:first-child {
+  .copyright_parant .copyright p:first-child {
     margin-bottom: 10px;
   }
 }

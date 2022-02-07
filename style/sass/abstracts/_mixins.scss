@@ -89,52 +89,31 @@
   text-align: center;
   text-transform: capitalize;
   @include xxs{
-    font-size: 27px;
+    font-size: 25px;
   }
 }
 
-@mixin angle_ {
-  &::after{
-    font-family: "Font Awesome 5 Free";
-    content: "\f107";
-    position: absolute;
-    color: $color_1;
-    top: -11px;
-    font-size: 15px;
-    line-height: 3.273;
-    font-weight: 900;
-    transition: .5s;
-    @include ar{
-      left: 15px;
-    }
-    @include en{
-      right: 15px;
-    }
-  }
-  &[aria-expanded="true"]::after{
-    content: "\f106";
-  }
-}
 
 @mixin dots_{
   .owl-dots{
     display: block;
     position: absolute;
-    bottom: 20px;
+    bottom: -12px;
     left: 50%;
     transform: translatex(-50%);
     // font-size: 18px;
-    color: $main_color;
+    color: $color_3;
     z-index: 9999;
     .owl-dot{
-      width: 16px;
-      height: 3px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
       background-color: #212121;
       opacity: 0.5;
       margin-inline-end: 5px;
   }
   .active{
-    background-color: $main_color;
+    background-color: $color_5;
     opacity: 1;
     transform: scale(1.2);
     outline: 0;
