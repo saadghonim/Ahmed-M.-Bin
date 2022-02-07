@@ -1360,6 +1360,7 @@ nav .close_ {
   font-size: 14px;
   color: #ffffff;
   line-height: 2.571;
+  text-transform: capitalize;
 }
 
 .team_parant .head_team p a {
