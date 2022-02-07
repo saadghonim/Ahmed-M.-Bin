@@ -1,0 +1,29 @@
+@import 'sass/abstracts/variables' ;
+@import 'sass/abstracts/mixins';
+@import 'sass/abstracts/functions';
+
+// base
+@import 'sass/base/fonts';
+@import 'sass/base/base';
+
+
+
+// components
+@import 'sass/components/intro';
+@import 'sass/components/about_us';
+@import 'sass/components/services';
+@import 'sass/components/contact_us';
+@import 'sass/components/clients';
+@import 'sass/components/join_us';
+@import 'sass/components/map';
+
+
+
+
+
+// layout
+@import 'sass/layout/footer';
+@import 'sass/layout/header';
+
+// page
+@import 'sass/pages/team';
