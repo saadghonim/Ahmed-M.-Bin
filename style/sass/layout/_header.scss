@@ -139,6 +139,9 @@ nav{
     align-items: center;
     justify-content: center;
     transition: .5s;
+    span{
+      display: block;
+    }
     &:hover{
       color: $color_3;
     }
@@ -254,11 +257,13 @@ nav{
   .lang{
     display: flex;
     align-items: center;
-  
     .bars_{
       margin-inline-end: 10px;
     }
     a{
+      span{
+        display: none;
+      }
       i{
         font-size: $font_s + 4;
         margin-top: 3px;

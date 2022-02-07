@@ -354,7 +354,7 @@ img {
 
 .services_parant .services .anc_ser {
   background-color: #ffffff;
-  padding: 50px 0;
+  padding: 50px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,6 +406,8 @@ img {
   height: auto;
   -webkit-transition: .5s;
   transition: .5s;
+  -webkit-filter: invert(39%) sepia(18%) saturate(5829%) hue-rotate(25deg) brightness(110%) contrast(63%);
+          filter: invert(39%) sepia(18%) saturate(5829%) hue-rotate(25deg) brightness(110%) contrast(63%);
 }
 
 @media only screen and (max-width: 767px) {
@@ -549,7 +551,7 @@ img {
   height: auto;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
-  opacity: .8;
+  opacity: .9;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -692,7 +694,7 @@ footer .shape_f {
   width: auto;
   height: auto;
   position: absolute;
-  top: 0;
+  top: -400px;
   left: 0;
   z-index: -1;
 }
@@ -1070,6 +1072,10 @@ nav .close_ {
   transition: .5s;
 }
 
+.lang a span {
+  display: block;
+}
+
 .lang a:hover {
   color: #9b702a;
 }
@@ -1203,6 +1209,9 @@ nav .close_ {
   .lang .bars_ {
     -webkit-margin-end: 10px;
             margin-inline-end: 10px;
+  }
+  .lang a span {
+    display: none;
   }
   .lang a i {
     font-size: 20px;
