@@ -204,6 +204,15 @@ img {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .banner {
+    height: auto;
+  }
+  .drag_down_parant {
+    bottom: 25px;
+  }
+}
+
 .about_us_parant {
   padding: 100px 0 90px;
 }
@@ -1425,8 +1434,11 @@ nav .close_ {
 }
 
 @media only screen and (max-width: 500px) {
+  .head_team {
+    height: 60px;
+  }
   .team_parant .team {
-    padding: 80px 0 80px;
+    padding: 50px 0 60px;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }

@@ -82,3 +82,11 @@
 }
 
 
+@include xxs{
+  .banner{
+    height: auto;
+  }
+  .drag_down_parant{
+    bottom: 25px;
+  }
+}
