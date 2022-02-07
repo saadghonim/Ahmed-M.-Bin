@@ -50,6 +50,7 @@
     align-items: center;
     justify-content: center;
     font-size: $font_s * 2 - 2;
+    text-transform: capitalize;
     color: $color_1;
     font-weight: 400;
 
@@ -74,7 +75,9 @@
     i{
       width: calc(100% - 80px);
       font-size: $font_s * 2 - 6;
-
+      font-size: $font_s + 6;
+      justify-content: start;
+      padding-inline-start: 10px;
     }
   }
 }

@@ -28,7 +28,6 @@
         img{
           transform: scale(1.1);
           Filter: invert(100%);
-
         }
       }
       span{
@@ -60,7 +59,7 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 15px;
       .anc_ser{
-        padding: 40px 0;
+        padding: 30px 5px;
         span{
         width: 100px;
         margin-bottom: 20px;
