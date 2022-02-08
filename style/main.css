@@ -482,7 +482,7 @@ img {
     gap: 15px;
   }
   .services_parant .services .anc_ser {
-    font-size: 13px;
+    font-size: 12px;
   }
   html[dir="ltr"] .services_parant .services .anc_ser {
     padding: 15px 5px;
@@ -1412,11 +1412,11 @@ nav .close_ {
           box-shadow: 0px 0px 10px 0px #00000026;
 }
 
-.dark {
+.dark, .dark_ {
   color: #000000 !important;
 }
 
-.dark:hover {
+.dark:hover, .dark_:hover {
   color: #ad7d2f !important;
 }
 

@@ -258,7 +258,8 @@ display: block;
 
 }
 
-.dark{
+
+.dark, .dark_{
   color: $color_2!important;
   &:hover{
     color: $color_5!important;
