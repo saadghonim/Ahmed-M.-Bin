@@ -131,6 +131,8 @@ img {
 .banner .cover_ {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .drag_down_parant {
@@ -235,7 +237,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .about_us_parant .about_us h3 {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 
@@ -355,7 +357,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .services_parant h3 {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 
@@ -396,8 +398,6 @@ img {
 }
 
 .services_parant .services .anc_ser:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
   Filter: invert(100%);
 }
 
@@ -419,8 +419,10 @@ img {
 .services_parant .services .anc_ser span img {
   width: auto;
   height: auto;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-filter: invert(39%) sepia(18%) saturate(5829%) hue-rotate(25deg) brightness(110%) contrast(63%);
           filter: invert(39%) sepia(18%) saturate(5829%) hue-rotate(25deg) brightness(110%) contrast(63%);
 }
@@ -465,7 +467,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .contact_us_parant h3 {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 
@@ -503,7 +505,7 @@ img {
 
 @media only screen and (max-width: 500px) and (max-width: 500px) {
   .contact_us_parant h3 {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 
@@ -529,7 +531,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .clients_parant h3 {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 
@@ -566,9 +568,11 @@ img {
   height: auto;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
-  opacity: .9;
-  -webkit-transition: .5s;
-  transition: .5s;
+  opacity: .5;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 @media only screen and (max-width: 991px) {
@@ -630,7 +634,7 @@ img {
 
 .join_us_parant {
   padding: 100px 0 110px;
-  background-image: url("../images/banner.png");
+  background-image: url("./images/banner.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -656,7 +660,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .join_us_parant .join_us h3 {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 
@@ -698,7 +702,7 @@ img {
 
 .join_us_parant img {
   position: absolute;
-  top: -1px;
+  top: -24px;
   right: 0;
   width: auto;
   height: auto;
@@ -921,6 +925,10 @@ footer .f_div .ul_list p {
   font-weight: 400;
 }
 
+.copyright_parant .copyright .tasawk {
+  margin: 0;
+}
+
 .copyright_parant .copyright .tasawk img {
   -webkit-margin-start: 3px;
           margin-inline-start: 3px;
@@ -1009,7 +1017,7 @@ nav .ul_nav > li > a:hover {
 }
 
 nav .ul_nav > li > a i {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 nav .ul_nav .hover_menu {
