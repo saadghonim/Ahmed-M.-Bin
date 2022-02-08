@@ -220,7 +220,7 @@ img {
 }
 
 .about_us_parant .about_us {
-  background-image: url("/images/back_logo.png");
+  background-image: url("../images/back_logo.png");
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
@@ -569,10 +569,8 @@ img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   opacity: .5;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media only screen and (max-width: 991px) {
@@ -634,7 +632,7 @@ img {
 
 .join_us_parant {
   padding: 100px 0 110px;
-  background-image: url("./images/banner.png");
+  background-image: url("../images/banner.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
