@@ -20,11 +20,11 @@
 .anc_about{
   background-color: $color_5;
   background: linear-gradient(to right, #ad7d2f, #9b702a);
-  background-size: 200%;
+  background-size: 2000%;
   width: 424px;
   height: 100px;
   display: inline-flex;
-  transition: .5s;
+  transition: .5s ease-in-out;
   &:not(:last-child){
     margin-bottom: 20px;
   }

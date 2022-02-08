@@ -156,6 +156,13 @@ footer{
             margin-top: -9px;
           }
         }
+        .time{
+          margin-inline-start: 15px;
+        }
+        p{
+          margin-inline-start: 15px;
+          width: 90%;
+        }
       }
     }
   }
@@ -189,7 +196,7 @@ footer{
   .copyright_parant{
     .copyright{
       flex-direction: column;
-      padding: 20px 0 20px;
+      padding: 15px 0;
   
       .copy_t{
         text-align:center;
@@ -198,7 +205,7 @@ footer{
       p{
         margin: 0;
         &:first-child{
-          margin-bottom: 10px;
+          margin-bottom: 5px;
         }
       }
     }

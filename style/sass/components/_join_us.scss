@@ -31,14 +31,17 @@
       justify-content: center;
       background-color: $color_5;
       margin: auto;
-      border: 1px solid transparent;
       font-weight: 400;
       transition: .5s;
       text-transform: capitalize;
+      border: 2px solid transparent;
       &:hover{
-        background-color: $color_1;
-        border-color: $color_5;
+        background-color: transparent;
         color: $color_5;
+        transform:translateY(-5px);
+        border-color: $color_5;
+        
+
       }
     }
   }

@@ -261,14 +261,14 @@ img {
   background-color: #ad7d2f;
   background: -webkit-gradient(linear, left top, right top, from(#ad7d2f), to(#9b702a));
   background: linear-gradient(to right, #ad7d2f, #9b702a);
-  background-size: 200%;
+  background-size: 2000%;
   width: 424px;
   height: 100px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .anc_about:not(:last-child) {
@@ -747,17 +747,19 @@ img {
           justify-content: center;
   background-color: #ad7d2f;
   margin: auto;
-  border: 1px solid transparent;
   font-weight: 400;
   -webkit-transition: .5s;
   transition: .5s;
   text-transform: capitalize;
+  border: 2px solid transparent;
 }
 
 .join_us_parant .join_us a:hover {
-  background-color: #ffffff;
-  border-color: #ad7d2f;
+  background-color: transparent;
   color: #ad7d2f;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  border-color: #ad7d2f;
 }
 
 .join_us_parant img {
@@ -800,8 +802,22 @@ img {
   }
 }
 
+.map {
+  position: relative;
+}
+
 .map img {
   width: 100%;
+}
+
+.map .marker {
+  max-width: 100%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: auto;
 }
 
 footer {
@@ -977,6 +993,15 @@ footer .f_div .ul_list p {
   footer .footer .f_div .ul_list li:first-child {
     margin-top: -9px;
   }
+  footer .footer .f_div .time {
+    -webkit-margin-start: 15px;
+            margin-inline-start: 15px;
+  }
+  footer .footer .f_div p {
+    -webkit-margin-start: 15px;
+            margin-inline-start: 15px;
+    width: 90%;
+  }
 }
 
 .copyright_parant .copyright {
@@ -1016,7 +1041,7 @@ footer .f_div .ul_list p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 20px 0 20px;
+    padding: 15px 0;
   }
   .copyright_parant .copyright .copy_t, .copyright_parant .copyright .tasawk {
     text-align: center;
@@ -1026,7 +1051,7 @@ footer .f_div .ul_list p {
     margin: 0;
   }
   .copyright_parant .copyright p:first-child {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 
