@@ -914,7 +914,7 @@ footer .f_div .ul_list p {
       -ms-flex-align: center;
           align-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.102);
-  padding: 20px 0 30px;
+  padding: 20px 0 20px;
 }
 
 .copyright_parant .copyright .copy_t, .copyright_parant .copyright .tasawk {
@@ -1336,6 +1336,7 @@ nav .close_ {
   left: 0;
   height: 100%;
   width: 100%;
+  overflow-y: hidden;
   background-color: white;
   z-index: 999999;
   overflow: hidden;

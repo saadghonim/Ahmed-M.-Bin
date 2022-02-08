@@ -66,6 +66,7 @@ $(window).on('scroll', function() {
 
 $(window).on( "load", function() {
   $(".preloader-sa").fadeOut();
+
 });
 
 });
