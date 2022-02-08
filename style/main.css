@@ -775,6 +775,7 @@ img {
   .join_us_parant {
     padding: 70px 0 80px;
     background-position: center;
+    background-attachment: inherit;
   }
   .join_us_parant .join_us h3 {
     margin-bottom: 20px;
