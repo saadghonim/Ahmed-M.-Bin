@@ -102,10 +102,9 @@
   .owl-dots{
     display: block;
     position: absolute;
-    bottom: -12px;
+    bottom: -30px;
     left: 50%;
     transform: translatex(-50%);
-    // font-size: 18px;
     color: $color_3;
     z-index: 9999;
     .owl-dot{

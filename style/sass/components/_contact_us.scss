@@ -18,10 +18,10 @@
 
 @include xxs{
   .contact_us_parant{
-    padding: 70px 0 50px;
+    padding: 50px 0 30px;
     h3{
       @include title_main;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
     .about_btn{
       a{

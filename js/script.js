@@ -48,15 +48,13 @@ if ($(window).width() <= 767 ){
 $(window).on('scroll', function() {
   if($(window).scrollTop() > 20) {
         $("header").addClass("fixed");
-        $("nav .ul_nav > li > a").addClass("dark");
+        $("nav .ul_nav > li > a, .lang a").addClass("dark");
         $(".dark_img").addClass("dark_img_b");
         $(".img_w").addClass("dark_img_n");
         $(".header").addClass("padd_");
-
-
   } else {
       $("header").removeClass("fixed");
-      $("nav .ul_nav > li > a").removeClass("dark");
+      $("nav .ul_nav > li > a, .lang a").removeClass("dark");
       $(".dark_img").removeClass("dark_img_b");
       $(".img_w").removeClass("dark_img_n");
       $(".header").removeClass("padd_");
