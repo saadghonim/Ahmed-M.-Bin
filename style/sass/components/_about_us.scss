@@ -1,5 +1,5 @@
 .about_us_parant{
-  padding: 100px 0 90px;
+  padding: 90px 0 100px;
   .about_us{
     background-image: url("../images/back_logo.png");
     background-position: center;
@@ -7,7 +7,7 @@
     text-align: center;
     h3{
       @include title_main;
-      padding: 20px 0 60px;
+      padding: 10px 0 50px;
     }
     .about_btn{
       display: flex;
@@ -71,13 +71,17 @@
       width: 80px;
       height: 80px;
       padding: 5px;
+      img{
+        width: 45px;
+      }
     }
     i{
       width: calc(100% - 80px);
-      font-size: $font_s * 2 - 6;
-      font-size: $font_s + 6;
+      font-size: $font_s + 2;
       justify-content: start;
-      padding-inline-start: 10px;
+      padding-inline-start: 20px;
+      font-style: normal;
     }
+
   }
 }

@@ -70,3 +70,19 @@
     }
   }
 }
+
+@include xxs{
+  .join_us_parant{
+    padding: 50px 0;
+    background-position: center;
+    .join_us{
+      h3{
+        margin-bottom: 20px;
+      }
+      p{
+        margin: 0 auto 25px;
+        font-size: $font_s;
+      }
+    }
+  }
+}

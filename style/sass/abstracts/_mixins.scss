@@ -90,6 +90,10 @@
   text-transform: capitalize;
   @include xxs{
     font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 95%;
   }
 }
 
@@ -121,3 +125,49 @@
 }
 }
 
+@mixin lang_ {
+  display: flex;
+  align-items: center;
+
+
+  a{
+    font-size: $font_s - 2;
+    color:$color_1;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    span{
+      display: block;
+    }
+    &:hover{
+      color: $color_3;
+    }
+    i{
+      font-size: $font_s + 4;
+      margin-inline-start: 5px;
+    }
+  }
+  @include sm{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    @include ar{
+      right: 20px;
+    }
+    @include en{
+      left: 20px;
+    }
+    a{
+      color: $color_2;
+
+      i{
+        font-size: $font_s + 4;
+        margin-top: 3px;
+        margin-inline-start: 5px;
+      }
+    }
+  }
+}

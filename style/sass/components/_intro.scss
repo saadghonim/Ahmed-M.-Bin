@@ -85,8 +85,11 @@
 
 @include xxs{
   .banner{
-    height: auto;
-  }
+    .line_position{
+      max-width: inherit;
+    }
+  } 
+
   .drag_down_parant{
     bottom: 25px;
   }

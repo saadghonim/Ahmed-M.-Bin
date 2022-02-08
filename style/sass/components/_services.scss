@@ -1,5 +1,5 @@
 .services_parant{
-  padding: 90px 0 120px;
+  padding: 100px 0 120px;
   background-color: $color_6;
   h3{
     @include title_main;
@@ -59,11 +59,13 @@
       gap: 15px;
       .anc_ser{
         padding: 30px 5px;
+        font-size: 13px;
         span{
         width: 100px;
         margin-bottom: 15px;
         img{
           transition: .5s;
+          width: 60px;
         }
         }
       }
@@ -71,3 +73,35 @@
   }
 }
 
+@include xxs{
+  .services_parant{
+    padding: 90px 0 100px;
+    h3{
+      margin-bottom: 40px;
+    }
+    .services{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      .anc_ser{
+        @include en{
+          padding: 15px 5px;
+
+        }
+        @include ar{
+        padding: 26px 5px;
+          
+        }
+        font-size: 13px;
+        span{
+        width: 60px;
+        height: 70px;
+        margin-bottom: 15px;
+        img{
+          transition: .5s;
+          width: 50px;
+        }
+        }
+      }
+    }
+  }
+}

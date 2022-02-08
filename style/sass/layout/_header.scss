@@ -23,11 +23,17 @@ header{
         }
       }
     }
-    
+    .bars_{
+      display: none;
+      }
+
   }
 }
 
 nav{
+  .lang{
+    display: none;
+  }
   .ul_nav{
     display: flex;
     >li{
@@ -117,63 +123,50 @@ nav{
 
 
 .lang{
-  display: flex;
-  align-items: center;
-
-  .bars_{
-    font-size: $font_s + 2;
-    color:$color_4;
-    margin-inline-end: 15px;
-    transition: .5s;
-    display: none;
-    cursor: pointer;
-    &:hover{
-      color: $color_3;
-    }
-  }
-  a{
-    font-size: $font_s - 2;
-    color:$color_4;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .5s;
-    span{
-      display: block;
-    }
-    &:hover{
-      color: $color_3;
-    }
-    i{
-      font-size: $font_s + 4;
-      margin-top: 3px;
-      margin-inline-start: 5px;
-    }
-  }
+@include lang_;
+display: block;
 }
 
 @include sm{
   header{
     z-index: 99;
+    .header{
+      .bars_{
+        font-size: $font_s + 8;
+        color:$color_1;
+        margin-inline-end: 15px;
+        transition: .5s;
+        display: block;
+        cursor: pointer;
+        &:hover{
+          color: $color_1;
+        }
+      }
+    }
   }
+  
+
   nav{
     position: fixed;
     top: 0;
     right: 0;
     padding: 100px 20px 0;
     background-color:$color_1;
-    width: 260px;
+    width: 100%;
     height: 100%;
     display: none;
     overflow-y: auto;
     @include en{
       left: 0;
     }
+    .lang{
+      display: block;
+      
+    }
     .close_{
       position: absolute;
       top: 20px;
-      font-size: $font_s + 2;
+      font-size: $font_s + 6;
       color: $color_2;
       transition: .5s;
       display: block;
@@ -223,7 +216,6 @@ nav{
           }
           >li{
             width: auto;
-            margin-bottom: 5px;
             text-align: center;
             a{
               color:$color_4 ;
@@ -237,9 +229,8 @@ nav{
       }
     }
     .lang{
-  .bars_{
-    display: block;
-    }
+      display: none;
+
     } 
   }
 @include xs{
@@ -249,28 +240,11 @@ nav{
       .logo{
         a{
           img{
-            width: 190px;
+            width: 210px;
           }
         }
       }
       
-    }
-  }
-  .lang{
-    display: flex;
-    align-items: center;
-    .bars_{
-      margin-inline-end: 10px;
-    }
-    a{
-      span{
-        display: none;
-      }
-      i{
-        font-size: $font_s + 4;
-        margin-top: 3px;
-        margin-inline-start: 5px;
-      }
     }
   }
 }
@@ -284,6 +258,9 @@ nav{
 
 .dark{
   color: $color_2!important;
+  &:hover{
+    color: $color_5!important;
+  }
 }
 .dark_img_b{
   display: block!important;
@@ -304,6 +281,7 @@ nav{
         padding: 10px 0;
         >a{
           color: $color_2;
+
         
       }
     }
