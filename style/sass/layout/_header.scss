@@ -133,14 +133,14 @@ display: block;
     .header{
       .bars_{
         font-size: $font_s + 8;
-        color:$color_4;
+        color:$color_1;
         margin-inline-end: 15px;
         transition: .5s;
         display: block;
         z-index: 10;
         cursor: pointer;
         &:hover{
-          color: $color_1;
+          color: $color_3;
         }
       }
     }

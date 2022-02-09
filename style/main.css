@@ -1359,7 +1359,7 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
   }
   header .header .bars_ {
     font-size: 24px;
-    color: #808080;
+    color: #ffffff;
     -webkit-margin-end: 15px;
             margin-inline-end: 15px;
     -webkit-transition: .5s;
@@ -1369,7 +1369,7 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
     cursor: pointer;
   }
   header .header .bars_:hover {
-    color: #ffffff;
+    color: #9b702a;
   }
   nav {
     position: fixed;
@@ -1644,7 +1644,7 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
   }
   .team_parant .team .team_item {
     text-align: start;
-    margin-bottom: 30;
+    margin-bottom: 25px;
   }
   .team_parant .team .team_item img {
     -webkit-margin-end: 15px;
