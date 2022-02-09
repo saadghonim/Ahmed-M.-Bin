@@ -532,7 +532,7 @@ html[dir="ltr"] .anc_about::before {
     font-size: 14px;
   }
   html[dir="ltr"] .services_parant .services .anc_ser {
-    padding: 15px 10px;
+    padding: 15px 0px;
   }
   html[dir="rtl"] .services_parant .services .anc_ser {
     padding: 15px 12px;
