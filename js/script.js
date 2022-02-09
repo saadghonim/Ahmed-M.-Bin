@@ -5,13 +5,10 @@ $(document).ready(function(){
     $(".bars_").click(function(){
       $("nav").toggle(500);
       $(".moboverlay").toggle(500);
-      $("body").addClass("over_");
+      $("body").toggleClass("over_");
+      $(this).toggleClass("la-times la-bars");
 
-    });
-    $(".close_,.moboverlay").click(function(){
-      $("nav").toggle(500);
-      $(".moboverlay").toggle(500);
-      $("body").removeClass("over_");
+
 
     });
     $(".hover_menu>a").click(function(){
@@ -48,13 +45,13 @@ if ($(window).width() <= 767 ){
 $(window).on('scroll', function() {
   if($(window).scrollTop() > 20) {
         $("header").addClass("fixed");
-        $("nav .ul_nav > li > a, .lang a, .bars_").addClass("dark");
+        $("nav .ul_nav > li > a, .bars_").addClass("dark");
         $(".dark_img").addClass("dark_img_b");
         $(".img_w").addClass("dark_img_n");
         $(".header").addClass("padd_");
   } else {
       $("header").removeClass("fixed");
-      $("nav .ul_nav > li > a, .lang a, .bars_").removeClass("dark");
+      $("nav .ul_nav > li > a, .bars_").removeClass("dark");
       $(".dark_img").removeClass("dark_img_b");
       $(".img_w").removeClass("dark_img_n");
       $(".header").removeClass("padd_");

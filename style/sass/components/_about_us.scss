@@ -19,21 +19,50 @@
 
 .anc_about{
   background-color: $color_5;
-  background: linear-gradient(to right, #ad7d2f, #9b702a);
-  background-size: 2000%;
   width: 424px;
   height: 100px;
   display: inline-flex;
-  transition: .5s ease-in-out;
-  &:not(:last-child){
-    margin-bottom: 20px;
+  transition: .5s ;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.5s;
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scaleX(0);
+      background: $color_3;
+      transition-property: transform;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-out;
+      @include ar{
+        transform-origin: right;
+      }
+      @include en{
+        transform-origin: left;
+      }
   }
   &:hover{
-    background-position: 100%;
+    color: $color_1;
+    &::before{
+      transform: scaleX(1);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+
+  }
+  &:not(:last-child){
+    margin-bottom: 20px;
   }
   span{
     width: 100px;
     height: 100px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,9 +70,10 @@
     img{
       width: auto;
       height: auto;
+      Filter: invert(100%);
     }
   }
-  i{
+  p{
     width: calc(100% - 100px);
     display: flex;
     align-items: center;
@@ -80,11 +110,10 @@
         width: 45px;
       }
     }
-    i{
+    p{
       width: calc(100% - 80px);
       font-size: $font_s + 2;
-      justify-content: start;
-      padding-inline-start: 20px;
+      justify-content: center;
       font-style: normal;
     }
 

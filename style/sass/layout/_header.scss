@@ -118,9 +118,7 @@ nav{
 
     }
   }
-  .close_{
-    display: none;
-    }
+
 }
 
 
@@ -135,10 +133,11 @@ display: block;
     .header{
       .bars_{
         font-size: $font_s + 8;
-        color:$color_1;
+        color:$color_4;
         margin-inline-end: 15px;
         transition: .5s;
         display: block;
+        z-index: 10;
         cursor: pointer;
         &:hover{
           color: $color_1;
@@ -146,12 +145,9 @@ display: block;
       }
     }
   }
-  
-
   nav{
     position: fixed;
     top: 0;
-    right: 0;
     padding: 100px 20px 0;
     background-color:$color_1;
     width: 100%;
@@ -159,33 +155,19 @@ display: block;
     display: none;
     overflow-y: auto;
     @include en{
+      right: 0;
+    }
+    @include ar{
       left: 0;
     }
     .lang{
       display: block;
       
     }
-    .close_{
-      position: absolute;
-      top: 20px;
-      font-size: $font_s + 6;
-      color: $color_2;
-      transition: .5s;
-      display: block;
-      &:hover{
-        color: $color_3;
-      }
-      @include ar{
-        left: 20px;
-      }
-      @include en{
-        right: 20px;
-      }
-    }
     .ul_nav{
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       >li{
         margin: 0;
         padding: 0;
@@ -194,8 +176,9 @@ display: block;
         }
         a{
           color: $color_2;
-          text-align: center;
-          font-size: $font_s;
+          text-align: start;
+          font-size: $font_s + 2;
+          font-weight: 600;
           }
       }
       .hover_menu{
@@ -218,9 +201,10 @@ display: block;
           }
           >li{
             width: auto;
-            text-align: center;
+            text-align: start;
             a{
               color:$color_4 ;
+              text-align: start;
               &:hover{
                 color: $color_3;
               }
@@ -313,3 +297,4 @@ display: block;
 .bars_dark{
   color: $color_2!important;
 }
+
