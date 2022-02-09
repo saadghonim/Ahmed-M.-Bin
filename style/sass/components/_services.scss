@@ -87,13 +87,12 @@
         justify-content: center;
         @include en{
           padding: 15px 3px;
-
+          font-size: 12px;
         }
         @include ar{
           padding: 15px 12px;
-          
+          font-size: 14px;
         }
-        font-size: 14px;
         span{
         width: auto;
         height: auto;

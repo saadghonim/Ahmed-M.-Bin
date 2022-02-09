@@ -4,12 +4,8 @@ $(document).ready(function(){
   if ($(window).width() <= 991) {
     $(".bars_").click(function(){
       $("nav").toggle(500);
-      $(".moboverlay").toggle(500);
       $("body").toggleClass("over_");
       $(this).toggleClass("la-times la-bars");
-
-
-
     });
     $(".hover_menu>a").click(function(){
       $(".ul_menu").slideToggle(500);
