@@ -136,14 +136,15 @@
     justify-content: center;
     transition: .5s;
     span{
-      display: block;
+      display: inline-block;
+      margin-inline-end: 3px;
     }
     &:hover{
       color: $color_3;
     }
     i{
       font-size: $font_s + 4;
-      margin-inline-start: 5px;
+      line-height: normal;
     }
   }
   @include sm{
@@ -159,11 +160,8 @@
     }
     a{
       color: $color_4;
-
       i{
         font-size: $font_s + 4;
-        margin-top: 3px;
-        margin-inline-start: 5px;
       }
     }
   }

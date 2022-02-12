@@ -1313,7 +1313,9 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
 }
 
 .lang a span {
-  display: block;
+  display: inline-block;
+  -webkit-margin-end: 3px;
+          margin-inline-end: 3px;
 }
 
 .lang a:hover {
@@ -1322,8 +1324,7 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
 
 .lang a i {
   font-size: 20px;
-  -webkit-margin-start: 5px;
-          margin-inline-start: 5px;
+  line-height: normal;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1348,9 +1349,6 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
   }
   .lang a i {
     font-size: 20px;
-    margin-top: 3px;
-    -webkit-margin-start: 5px;
-            margin-inline-start: 5px;
   }
 }
 
@@ -1540,6 +1538,12 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
 
 .preloader-sa img {
   width: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .preloader-sa img {
+    width: 200px;
+  }
 }
 
 .bars_dark {

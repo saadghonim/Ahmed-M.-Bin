@@ -59,8 +59,8 @@ $(window).on('scroll', function() {
 });
 $(window).on( "load", function() {
   $(".preloader-sa").fadeOut();
-  $("body").removeClass("over_");
-});
+    $("body").removeClass("over_");
+    });
 });
 
 var fixedBar = document.getElementById("header_");

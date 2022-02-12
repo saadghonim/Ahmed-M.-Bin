@@ -292,7 +292,13 @@ display: block;
     width: auto;
   } 
 }
-
+@include xs{
+  .preloader-sa{
+    img{
+      width: 200px;
+    }
+  }
+}
 
 .bars_dark{
   color: $color_2!important;
