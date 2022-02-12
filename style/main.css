@@ -429,7 +429,7 @@ html[dir="ltr"] .anc_about::before {
 
 .services_parant .services .anc_ser {
   background-color: #ffffff;
-  padding: 50px 10px;
+  padding: 50px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,7 +442,7 @@ html[dir="ltr"] .anc_about::before {
           align-items: center;
   font-size: 16px;
   color: #000000;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: capitalize;
   -webkit-transition: .5s;
   transition: .5s;
@@ -1360,9 +1360,9 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
   }
   header .header .bars_ {
     font-size: 24px;
-    color: #808080;
-    -webkit-margin-end: 15px;
-            margin-inline-end: 15px;
+    color: #ffffff;
+    -webkit-margin-end: 0px;
+            margin-inline-end: 0px;
     -webkit-transition: .5s;
     transition: .5s;
     display: block;
@@ -1467,15 +1467,15 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
     padding: 15px 0;
   }
   header .header .logo a img {
-    width: 210px;
+    width: 230px;
   }
 }
 
 .fixed {
   background-color: #ffffff;
   padding: 10px 0;
-  -webkit-box-shadow: 0px 0px 10px 0px #00000026;
-          box-shadow: 0px 0px 10px 0px #00000026;
+  -webkit-box-shadow: 0px 0px 5px 0px #0000001a;
+          box-shadow: 0px 0px 5px 0px #0000001a;
 }
 
 .dark, .dark_ {

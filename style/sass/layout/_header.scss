@@ -133,8 +133,8 @@ display: block;
     .header{
       .bars_{
         font-size: $font_s + 8;
-        color:$color_4;
-        margin-inline-end: 15px;
+        color:$color_1;
+        margin-inline-end: 0px;
         transition: .5s;
         display: block;
         z-index: 10;
@@ -226,7 +226,7 @@ display: block;
       .logo{
         a{
           img{
-            width: 210px;
+            width: 230px;
           }
         }
       }
@@ -238,7 +238,7 @@ display: block;
 .fixed{
   background-color: $color_1;
   padding: 10px 0;
-  box-shadow: 0px 0px 10px 0px #00000026;
+  box-shadow: 0px 0px 5px 0px #0000001a;
 
 }
 

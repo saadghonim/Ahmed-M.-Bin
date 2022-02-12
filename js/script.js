@@ -6,6 +6,8 @@ $(document).ready(function(){
       $("nav").toggle(500);
       $("body").toggleClass("over_");
       $(this).toggleClass("la-times la-bars");
+      $(".bars_").toggleClass("bars_dark");
+
     });
     $(".hover_menu>a").click(function(){
       $(".ul_menu").slideToggle(500);
@@ -38,6 +40,7 @@ if ($(window).width() <= 767 ){
   });
 
 }
+
 $(window).on('scroll', function() {
   if($(window).scrollTop() > 20) {
         $("header").addClass("fixed");
@@ -54,12 +57,10 @@ $(window).on('scroll', function() {
 
   };
 });
-
 $(window).on( "load", function() {
   $(".preloader-sa").fadeOut();
-
+  $("body").removeClass("over_");
 });
-
 });
 
 var fixedBar = document.getElementById("header_");
