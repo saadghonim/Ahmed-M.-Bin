@@ -289,7 +289,7 @@ display: block;
   align-items: center;
   justify-content: center;
   img {
-    width: auto;
+    width: 300px
   } 
 }
 @include xs{
@@ -304,3 +304,7 @@ display: block;
   color: $color_2!important;
 }
 
+.fixsedt {
+  top: -130px;
+  transition: .5s
+}

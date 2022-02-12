@@ -1537,7 +1537,7 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
 }
 
 .preloader-sa img {
-  width: auto;
+  width: 300px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1548,6 +1548,12 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
 
 .bars_dark {
   color: #000000 !important;
+}
+
+.fixsedt {
+  top: -130px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .team_parant {

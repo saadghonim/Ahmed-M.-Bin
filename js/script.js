@@ -61,19 +61,16 @@ $(window).on( "load", function() {
   $(".preloader-sa").fadeOut();
     $("body").removeClass("over_");
     });
+    $(window).on("scroll", function() {
+      $(window).scrollTop() > 100 ? $("header").addClass("fixed") : $("header").removeClass("fixed")
+  })
 });
 
-var fixedBar = document.getElementById("header_");
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos >= currentScrollPos) {
-    fixedBar.style.cssText = 
-    'top: 0; transition: .3s;'
-  } else {
-    fixedBar.style.cssText = 
-    'top: -130px; transition:.3s;'
 
-  }
-  prevScrollpos = currentScrollPos;
-}
+var fixedBar = document.getElementById("header_"),
+  prevScrollpos = $(window).scrollTop();
+
+window.onscroll = function() {
+  var o = $(window).scrollTop();
+  prevScrollpos < o && prevScrollpos > 0 ? fixedBar.classList.add("fixsedt") : fixedBar.classList.remove("fixsedt"), prevScrollpos = o
+}, document.documentElement.style.setProperty("--animate-duration", ".5s");
