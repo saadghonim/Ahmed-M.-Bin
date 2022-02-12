@@ -4,6 +4,7 @@ header{
   left: 0;
   right: 0;
   z-index: 1;
+  transition: .5s;
   .header{
     display: flex;
     justify-content: space-between;
