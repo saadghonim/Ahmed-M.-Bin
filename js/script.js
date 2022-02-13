@@ -57,10 +57,10 @@ $(window).on('scroll', function() {
 
   };
 });
-$(window).on( "load", function() {
-  $(".preloader-sa").fadeOut();
-    $("body").removeClass("over_");
-    });
+// $(window).on( "load", function() {
+//   $(".preloader-sa").fadeOut();
+//     $("body").removeClass("over_");
+//     });
     $(window).on("scroll", function() {
       $(window).scrollTop() > 100 ? $("header").addClass("fixed") : $("header").removeClass("fixed")
   })
@@ -74,3 +74,14 @@ window.onscroll = function() {
   var o = $(window).scrollTop();
   prevScrollpos < o && prevScrollpos > 0 ? fixedBar.classList.add("fixsedt") : fixedBar.classList.remove("fixsedt"), prevScrollpos = o
 }, document.documentElement.style.setProperty("--animate-duration", "5s");
+
+$(document).ready(function (){
+  $(window).on( "load", function() {
+    $('.preloader-sa').delay(3000).slideUp("500", function () {
+      $(".preload_back").delay(200).fadeOut();
+      $("body").removeClass("over_");
+  });
+
+      });
+
+});

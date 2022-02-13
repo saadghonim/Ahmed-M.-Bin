@@ -1517,37 +1517,6 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
   color: #000000;
 }
 
-.preloader-sa {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  overflow-y: hidden;
-  background-color: white;
-  z-index: 999999;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.preloader-sa img {
-  width: 300px;
-}
-
-@media only screen and (max-width: 767px) {
-  .preloader-sa img {
-    width: 200px;
-  }
-}
-
 .bars_dark {
   color: #000000 !important;
 }
@@ -1556,6 +1525,167 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
   top: -130px;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+.preloader-sa {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ad7d2f;
+  z-index: 999;
+  text-align: center;
+}
+
+.preloader-sa img {
+  height: auto;
+}
+
+.preloade_slide {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.preload_back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: #ad7d2f;
+}
+
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 180px;
+}
+
+.progress-bar {
+  background-color: #ad7d2f;
+  border: none;
+  overflow: hidden;
+  width: 200px;
+  height: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 20px 0 0 0;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.progress-bar .Shape_1 {
+  background-color: #ad7d2f;
+  position: absolute;
+  left: 583px;
+  top: 459px;
+  width: 200px;
+  height: 4px;
+  z-index: 4;
+}
+
+.progress-bar span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.bar {
+  background-color: #eeeeee;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.progress {
+  -webkit-animation: loader 8s ease infinite;
+          animation: loader 8s ease infinite;
+  background: #ad7d2f;
+  border: none;
+  padding: 0px;
+  width: 0;
+  height: 4px;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 10%;
+  }
+  25% {
+    width: 24%;
+  }
+  43% {
+    width: 41%;
+  }
+  56% {
+    width: 50%;
+  }
+  66% {
+    width: 52%;
+  }
+  71% {
+    width: 60%;
+  }
+  75% {
+    width: 76%;
+  }
+  94% {
+    width: 86%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes loader {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 10%;
+  }
+  25% {
+    width: 24%;
+  }
+  43% {
+    width: 41%;
+  }
+  56% {
+    width: 50%;
+  }
+  66% {
+    width: 52%;
+  }
+  71% {
+    width: 60%;
+  }
+  75% {
+    width: 76%;
+  }
+  94% {
+    width: 86%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .team_parant {
