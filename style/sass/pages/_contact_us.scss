@@ -26,9 +26,11 @@
 					margin-bottom: 10px;
 				}
 				.form-control{
+					border: 2px solid transparent;
+					border-radius: unset;
 					&:focus{
 						box-shadow: none;
-						border: 2px solid $color_3;
+						border-color: $color_3;
 						
 					}
 					}
@@ -101,11 +103,9 @@
   background-size: 15px;
   outline: none;
 }
-
 select::-ms-expand { 
   display: none;
 }
-
 @media screen and (min-width:0\0) {
   select {
     background:none\9;
@@ -115,4 +115,32 @@ select::-ms-expand {
 
 /* --------------------------- */
 
+
+@include xs{
+	.contact_page_page{
+		.contact_page{
+			padding: 20px 0;
+			width: 100%;
+		}
+		img{
+			height: fill-available;
+		}
+		.group_2{
+			flex-direction: column;
+			margin-bottom: 20px!important;
+		}
+		.contact_page{
+			.from_group{
+				.gro_select{
+					width: 100%;
+					.f-select{
+						width: 100%;
+					}
+				}
+			}
+
+		} 
+	}
+
+}
 

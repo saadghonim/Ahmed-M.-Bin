@@ -28,3 +28,21 @@
     }
   }
 }
+
+@include xs{
+  .about_us_page{
+    padding: 60px 0 70px;
+    .row{
+      flex-direction: column-reverse;
+    }
+    .about_div{
+      text-align: center;
+      h3{
+        margin-bottom: 20px;
+      }
+    }
+    .about_img{
+      margin-bottom: 40px;
+    }
+  }
+}

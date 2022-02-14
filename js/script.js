@@ -9,8 +9,8 @@ $(document).ready(function(){
       $(".bars_").toggleClass("bars_dark");
 
     });
-    $(".hover_menu>a").click(function(){
-      $(".ul_menu").slideToggle(500);
+    $(".hover_menu").click(function(){
+      $(this).children().next().slideToggle("500");
     });
   }
   $(".drag_down_parant ").click(function () {
