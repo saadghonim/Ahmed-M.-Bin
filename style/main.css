@@ -1947,6 +1947,8 @@ nav .ul_nav .hover_m2 .ul_menu li {
 .contact_page_page .contact_page .from_group .form-control {
   border: 2px solid transparent;
   border-radius: unset;
+  font-size: 16px;
+  color: #808080;
 }
 
 .contact_page_page .contact_page .from_group .form-control:focus {
