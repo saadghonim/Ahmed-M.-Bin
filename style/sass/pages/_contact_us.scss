@@ -1,0 +1,118 @@
+.contact_page_page{
+	padding: 50px 0;
+	position: relative;
+	background: linear-gradient(0deg, #ffffff00 13%, #000000dd 96%);
+	img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		object-fit: cover;
+	}
+	.contact_page{
+		padding: 100px 0;
+		width: 40%;
+		margin: auto;
+		.from_group{
+			margin-bottom: 20px;
+			text-align: start;
+			.gro_select{
+				display: flex;
+				flex-direction: column;
+				width: 48%;
+			}
+				label{
+					color: $color_1;
+					margin-bottom: 10px;
+				}
+				.form-control{
+					&:focus{
+						box-shadow: none;
+						border: 2px solid $color_3;
+						
+					}
+					}
+
+				}
+				button{
+					width: 150px;
+					height: 45px;
+					color: $color_1;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background-color: $color_5;
+					font-weight: 400;
+					transition: .5s;
+					text-transform: capitalize;
+					vertical-align: middle;
+					transform: perspective(1px) translateZ(0);
+					position: relative;
+					transition-property: color;
+					transition-duration: 0.3s;
+					&::before{
+						content: "";
+						position: absolute;
+						z-index: -1;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						background: $color_3;
+						transform: scale(0);
+						transition-property: transform;
+						transition-duration: 0.3s;
+						transition-timing-function: ease-out;
+					}
+					&:hover{
+						&::before{
+							transform: scale(1);
+		
+						}
+						// color: $color_5;
+		
+					}
+				}
+				.required{
+					>label{
+						&::after{
+								content: "*";
+								color: rgb(223, 0, 0);
+								font-size: 14px;
+								margin-inline-start:5px;
+						}
+					}
+				}
+		}
+		.group_2{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 0!important;
+		}
+	}
+	
+
+
+
+.f-select {
+  font-size: 14px;
+  height: 40px;
+  appearance: none;
+  background-size: 15px;
+  outline: none;
+}
+
+select::-ms-expand { 
+  display: none;
+}
+
+@media screen and (min-width:0\0) {
+  select {
+    background:none\9;
+    padding: 5px\9;
+  } 
+}
+
+/* --------------------------- */
+
+

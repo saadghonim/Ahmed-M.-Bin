@@ -1,0 +1,30 @@
+.about_us_page{
+  padding: 70px 0 100px ;
+
+  .about_div{
+    text-align: start;
+
+    h3{
+      font-size: 24px;
+      font-weight: 700;
+      color: $color_2;
+      margin-bottom: 40px;
+    }
+    p{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.8;
+        }
+  }
+  .about_img{
+    position: sticky;
+    top: 50px;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    img{
+      width: auto;
+      height: auto;
+    }
+  }
+}
