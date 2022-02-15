@@ -1,14 +1,5 @@
 .contact_page_page{
 	padding: 50px 0;
-	position: relative;
-	background: linear-gradient(0deg, #ffffff00 13%, #000000dd 96%);
-	img{
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -1;
-		object-fit: cover;
-	}
 	.contact_page{
 		padding: 100px 0;
 		width: 40%;
@@ -19,20 +10,27 @@
 			.gro_select{
 				display: flex;
 				flex-direction: column;
-				width: 48%;
+				position: relative;
+				i{
+					position: absolute;
+					top: 45px;
+					left: 12px;
+					color: $color_5;
+					font-size: $font_s;
+				}
 			}
 				label{
-					color: $color_1;
+					color: $color_2;
 					margin-bottom: 10px;
 				}
 				.form-control{
-					border: 2px solid transparent;
+					border: 2px solid $color_5;
 					border-radius: unset;
 					font-size: $font_s;
 					color: $color_4;
 					&:focus{
 						box-shadow: none;
-						border-color: $color_3;
+						border-color: $color_7;
 						
 					}
 					}
@@ -88,11 +86,6 @@
 					}
 				}
 		}
-		.group_2{
-			display: flex;
-			justify-content: space-between;
-			margin-bottom: 0!important;
-		}
 	}
 	
 
@@ -123,9 +116,6 @@ select::-ms-expand {
 		.contact_page{
 			padding: 20px 0;
 			width: 100%;
-		}
-		img{
-			height: fill-available;
 		}
 		.group_2{
 			flex-direction: column;
