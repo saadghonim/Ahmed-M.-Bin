@@ -1,3 +1,10 @@
+$(window).on( "load", function() {
+  $('.preloader-sa').delay(3000).slideUp("500", function () {
+    $(".preload_back").delay(200).fadeOut();
+    $("body").removeClass("over_");
+});
+
+    });
 $(document).ready(function(){
 
   // ~~~~~~~~~~~~header~~~~~~~~~~~~
@@ -61,13 +68,7 @@ $(window).on('scroll', function() {
     $(window).on("scroll", function() {
       $(window).scrollTop() > 100 ? $("header").addClass("fixed") : $("header").removeClass("fixed")
   })
-  $(window).on( "load", function() {
-    $('.preloader-sa').delay(3000).slideUp("500", function () {
-      $(".preload_back").delay(200).fadeOut();
-      $("body").removeClass("over_");
-  });
 
-      });
 });
 
 
