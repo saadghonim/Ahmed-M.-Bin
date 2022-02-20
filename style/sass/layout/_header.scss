@@ -121,26 +121,26 @@ nav{
         }
 
     }
-    // .hover_m2{
+    .hover_m2{
 
-    //   &:hover{
-    //     .ul_menu{
-    //       right: 0px;
+      &:hover{
+        .ul_menu{
+          right: 0px;
 
-    //     }
-    //   }
-    //   .ul_menu{
-    //     flex-wrap: nowrap;
-    //     height:auto;
-    //     max-width: 160px;
-    //     padding: 20px;
-    //     right: -25px;
+        }
+      }
+      .ul_menu{
+        flex-wrap: nowrap;
+        height:auto;
+        max-width: 160px;
+        padding: 25px 30px;
+        right: -25px;
 
-    //     li{
-    //       width: auto;
-    //     }
-    //   }
-    // }
+        li{
+          width: auto;
+        }
+      }
+    }
   }
 }
 

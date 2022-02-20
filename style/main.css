@@ -999,12 +999,13 @@ footer .f_div .ul_list .time div:first-child {
           margin-inline-end: 5px;
 }
 
-footer .f_div .ul_list p {
+footer .f_div .ul_list .location_ {
   font-size: 14px;
   color: #ffffff;
   font-weight: 400;
   line-height: 1.857;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 992px) {
@@ -1289,6 +1290,23 @@ nav .ul_nav .hover_menu .ul_menu > li a {
 
 nav .ul_nav .hover_menu .ul_menu > li a:hover {
   color: #9b702a;
+}
+
+nav .ul_nav .hover_m2:hover .ul_menu {
+  right: 0px;
+}
+
+nav .ul_nav .hover_m2 .ul_menu {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: auto;
+  max-width: 160px;
+  padding: 25px 30px;
+  right: -25px;
+}
+
+nav .ul_nav .hover_m2 .ul_menu li {
+  width: auto;
 }
 
 .lang {

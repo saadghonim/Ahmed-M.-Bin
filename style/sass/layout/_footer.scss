@@ -76,12 +76,13 @@ footer{
           }
         }
       }
-      p{
+      .location_{
         font-size: $font_s - 2;
         color: $color_1;
         font-weight: 400;
         line-height: 1.857;
         margin-bottom: 10px;
+        text-decoration: none;
       }
     }
   }
