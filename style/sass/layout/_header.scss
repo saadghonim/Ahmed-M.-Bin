@@ -67,7 +67,24 @@ nav{
         }
         >a{
           color: $color_3;
+
         }
+            a{
+              &::after{
+                color: $color_3;
+
+            }
+            }
+      }
+      a{
+        &::after{
+          content: "\";
+          font-family: "line Awesome Free";
+          font-weight: 900;
+          color: #ffffff;
+          font-size: 11px;
+          transition: .5s;
+      }
       }
         .ul_menu{
           position: absolute;

@@ -1228,6 +1228,20 @@ nav .ul_nav .hover_menu:hover > a {
   color: #9b702a;
 }
 
+nav .ul_nav .hover_menu:hover a::after {
+  color: #9b702a;
+}
+
+nav .ul_nav .hover_menu a::after {
+  content: "\";
+  font-family: "line Awesome Free";
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 11px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 nav .ul_nav .hover_menu .ul_menu {
   position: absolute;
   background-color: #ffffff;
