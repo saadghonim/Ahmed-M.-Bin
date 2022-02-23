@@ -76,7 +76,7 @@ nav{
             }
             }
       }
-      a{
+      >a{
         &::after{
           content: "\";
           font-family: "line Awesome Free";
@@ -97,9 +97,7 @@ nav{
           display: flex;
           flex-wrap: wrap;
           width: 492px;
-          height: 290px;
-          flex-direction: column;
-          // justify-content: space-between;
+          // height: 290px;
           transition: .5s;
           visibility: hidden;
           z-index: -1;
@@ -120,9 +118,16 @@ nav{
             transform: translateX(-50%);
             transition: 0.3s;
             opacity: 1;
+            @include en{
+              left: 25px
+            }
+            @include ar{
+              right: 25px
+            }
           }
           >li{
-            width: 42%;
+            width: 50%;
+
             a{
               font-size: $font_s - 2;
               color: $color_2;
@@ -142,12 +147,14 @@ nav{
 
       &:hover{
         .ul_menu{
-          right: 0px;
-
+          right: -15pxpx;
+          li{
+            width: 100%;
+          }
         }
       }
       .ul_menu{
-        flex-wrap: nowrap;
+        // flex-wrap: nowrap;
         height:auto;
         max-width: 160px;
         padding: 25px 30px;
@@ -254,16 +261,6 @@ display: block;
           }
         }
       }
-      // .hover_m2{
-      //   .ul_menu{
-      //     height: auto;
-      //     box-shadow: none;
-          
-      //     li{
-      //       width: auto;
-      //     }
-      //   }
-      // }
       }
     }
     .lang{

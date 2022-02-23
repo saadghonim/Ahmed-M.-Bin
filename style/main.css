@@ -1232,7 +1232,7 @@ nav .ul_nav .hover_menu:hover a::after {
   color: #9b702a;
 }
 
-nav .ul_nav .hover_menu a::after {
+nav .ul_nav .hover_menu > a::after {
   content: "\";
   font-family: "line Awesome Free";
   font-weight: 900;
@@ -1256,11 +1256,6 @@ nav .ul_nav .hover_menu .ul_menu {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 492px;
-  height: 290px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-transition: .5s;
   transition: .5s;
   visibility: hidden;
@@ -1288,8 +1283,16 @@ nav .ul_nav .hover_menu .ul_menu::after {
   opacity: 1;
 }
 
+html[dir="ltr"] nav .ul_nav .hover_menu .ul_menu::after {
+  left: 25px;
+}
+
+html[dir="rtl"] nav .ul_nav .hover_menu .ul_menu::after {
+  right: 25px;
+}
+
 nav .ul_nav .hover_menu .ul_menu > li {
-  width: 42%;
+  width: 50%;
 }
 
 nav .ul_nav .hover_menu .ul_menu > li a {
@@ -1307,12 +1310,14 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
 }
 
 nav .ul_nav .hover_m2:hover .ul_menu {
-  right: 0px;
+  right: -15pxpx;
+}
+
+nav .ul_nav .hover_m2:hover .ul_menu li {
+  width: 100%;
 }
 
 nav .ul_nav .hover_m2 .ul_menu {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   height: auto;
   max-width: 160px;
   padding: 25px 30px;
@@ -1911,7 +1916,7 @@ nav .ul_nav .hover_m2 .ul_menu li {
 
 .contact_page_page .contact_page {
   padding: 100px 0;
-  width: 40%;
+  max-width: 700px;
   margin: auto;
 }
 
@@ -1933,9 +1938,9 @@ nav .ul_nav .hover_m2 .ul_menu li {
 
 .contact_page_page .contact_page .from_group .gro_select i {
   position: absolute;
-  top: 45px;
+  top: 50px;
   left: 12px;
-  color: #ad7d2f;
+  color: #f2f2f2;
   font-size: 16px;
 }
 
@@ -1945,10 +1950,11 @@ nav .ul_nav .hover_m2 .ul_menu li {
 }
 
 .contact_page_page .contact_page .from_group .form-control {
-  border: 2px solid #ad7d2f;
+  border: 2px solid #f2f2f2;
   border-radius: unset;
   font-size: 16px;
   color: #808080;
+  height: 48px;
 }
 
 .contact_page_page .contact_page .from_group .form-control:focus {
