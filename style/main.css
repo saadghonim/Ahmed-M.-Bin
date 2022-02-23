@@ -1275,7 +1275,7 @@ nav .ul_nav .hover_menu .ul_menu::after {
 }
 
 html[dir="ltr"] nav .ul_nav .hover_menu .ul_menu::after {
-  left: 25px;
+  left: 41px;
 }
 
 html[dir="rtl"] nav .ul_nav .hover_menu .ul_menu::after {
@@ -1316,7 +1316,7 @@ html[dir="rtl"] nav .ul_nav .hover_menu:hover .ul_menu {
 }
 
 html[dir="ltr"] nav .ul_nav .hover_menu:hover .ul_menu {
-  left: 0px;
+  left: -32px;
 }
 
 nav .ul_nav .hover_menu:hover > a {
@@ -1328,7 +1328,7 @@ nav .ul_nav .hover_menu:hover a::after {
 }
 
 html[dir="rtl"] nav .ul_nav .hover_m2:hover .ul_menu {
-  right: -15px;
+  right: -25px;
 }
 
 html[dir="ltr"] nav .ul_nav .hover_m2:hover .ul_menu {
@@ -1486,6 +1486,9 @@ nav .ul_nav .hover_m2 .ul_menu li {
   }
   nav .ul_nav .hover_menu {
     position: inherit;
+  }
+  nav .ul_nav .hover_menu > a::after {
+    color: #9b702a;
   }
   nav .ul_nav .hover_menu .ul_menu {
     position: inherit;

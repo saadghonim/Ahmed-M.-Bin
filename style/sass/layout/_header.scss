@@ -104,7 +104,7 @@ nav{
             transition: 0.3s;
             opacity: 1;
             @include en{
-              left: 25px
+              left: 41px
             }
             @include ar{
               right: 25px
@@ -140,7 +140,7 @@ nav{
               
             }
             @include en {
-              left: 0px;
+              left: -32px;
                 
               }
           }
@@ -160,7 +160,7 @@ nav{
       &:hover{
         .ul_menu{
           @include ar{
-            right: -15px;
+            right: -25px;
           }
           @include en{
             left: -15px;
@@ -254,6 +254,11 @@ display: block;
       }
       .hover_menu{
         position: inherit;
+        >a{
+          &::after{
+            color: $color_3;
+        }
+      }
         .ul_menu{
           position: inherit;
           padding: 15px 0 0;
