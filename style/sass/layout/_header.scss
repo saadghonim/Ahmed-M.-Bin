@@ -86,6 +86,14 @@ nav{
           transition: .5s;
       }
       }
+      // &::after{
+      //   content: "\";
+      //   font-family: "line Awesome Free";
+      //   font-weight: 900;
+      //   color: $color_1;
+      //   font-size: $font_s - 6;
+      //   margin-inline-start: 2px;
+      // }
         .ul_menu{
           position: absolute;
           background-color: $color_1;
