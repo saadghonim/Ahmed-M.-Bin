@@ -1316,7 +1316,7 @@ html[dir="rtl"] nav .ul_nav .hover_menu:hover .ul_menu {
 }
 
 html[dir="ltr"] nav .ul_nav .hover_menu:hover .ul_menu {
-  left: -32px;
+  left: -29px;
 }
 
 nav .ul_nav .hover_menu:hover > a {
@@ -1328,11 +1328,11 @@ nav .ul_nav .hover_menu:hover a::after {
 }
 
 html[dir="rtl"] nav .ul_nav .hover_m2:hover .ul_menu {
-  right: -25px;
+  right: -29px;
 }
 
 html[dir="ltr"] nav .ul_nav .hover_m2:hover .ul_menu {
-  left: -15px;
+  left: -29px;
 }
 
 nav .ul_nav .hover_m2:hover .ul_menu li {
@@ -1591,6 +1591,11 @@ nav .ul_nav .hover_m2 .ul_menu li {
   color: #000000;
 }
 
+.header_w nav .ul_nav .hover_menu > a::after {
+  content: "\";
+  color: #9b702a;
+}
+
 .bars_dark {
   color: #000000 !important;
 }
@@ -1808,7 +1813,7 @@ nav .ul_nav .hover_m2 .ul_menu li {
 }
 
 .team_parant .team {
-  padding: 80px 0 150px;
+  padding: 80px 0 80px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];

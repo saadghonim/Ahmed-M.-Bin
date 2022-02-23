@@ -140,7 +140,7 @@ nav{
               
             }
             @include en {
-              left: -32px;
+              left: -29px;
                 
               }
           }
@@ -160,10 +160,10 @@ nav{
       &:hover{
         .ul_menu{
           @include ar{
-            right: -25px;
+            right: -29px;
           }
           @include en{
-            left: -15px;
+            left: -29px;
           }
           li{
             width: 100%;
@@ -348,6 +348,14 @@ display: block;
           color: $color_2;
 
         
+      }
+    }
+    .hover_menu{
+      >a{
+        &::after{
+          content: "\";
+          color: $color_3;
+      }
       }
     }
   }
