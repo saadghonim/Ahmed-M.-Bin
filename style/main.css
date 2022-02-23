@@ -650,7 +650,7 @@ html[dir="ltr"] .anc_about::before {
   gap: 25px;
 }
 
-.clients a {
+.clients .anc_client {
   width: 160px;
   height: 160px;
   display: -webkit-box;
@@ -664,13 +664,13 @@ html[dir="ltr"] .anc_about::before {
           justify-content: center;
 }
 
-.clients a:hover img {
+.clients .anc_client:hover img {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
   opacity: 1;
 }
 
-.clients a img {
+.clients .anc_client img {
   width: auto;
   height: auto;
   -webkit-filter: grayscale(1);
@@ -1217,21 +1217,6 @@ nav .ul_nav .hover_menu {
   position: relative;
 }
 
-nav .ul_nav .hover_menu:hover .ul_menu {
-  visibility: visible;
-  z-index: 1;
-  opacity: 1;
-  right: -30px;
-}
-
-nav .ul_nav .hover_menu:hover > a {
-  color: #9b702a;
-}
-
-nav .ul_nav .hover_menu:hover a::after {
-  color: #9b702a;
-}
-
 nav .ul_nav .hover_menu > a::after {
   content: "\";
   font-family: "line Awesome Free";
@@ -1265,7 +1250,7 @@ nav .ul_nav .hover_menu .ul_menu {
 }
 
 html[dir="ltr"] nav .ul_nav .hover_menu .ul_menu {
-  left: 0px;
+  left: -70px;
 }
 
 html[dir="rtl"] nav .ul_nav .hover_menu .ul_menu {
@@ -1320,8 +1305,34 @@ nav .ul_nav .hover_menu .ul_menu > li a:hover {
   color: #9b702a;
 }
 
-nav .ul_nav .hover_m2:hover .ul_menu {
-  right: -15pxpx;
+nav .ul_nav .hover_menu:hover .ul_menu {
+  visibility: visible;
+  z-index: 1;
+  opacity: 1;
+}
+
+html[dir="rtl"] nav .ul_nav .hover_menu:hover .ul_menu {
+  right: -30px;
+}
+
+html[dir="ltr"] nav .ul_nav .hover_menu:hover .ul_menu {
+  left: 0px;
+}
+
+nav .ul_nav .hover_menu:hover > a {
+  color: #9b702a;
+}
+
+nav .ul_nav .hover_menu:hover a::after {
+  color: #9b702a;
+}
+
+html[dir="rtl"] nav .ul_nav .hover_m2:hover .ul_menu {
+  right: -15px;
+}
+
+html[dir="ltr"] nav .ul_nav .hover_m2:hover .ul_menu {
+  left: -15px;
 }
 
 nav .ul_nav .hover_m2:hover .ul_menu li {

@@ -58,24 +58,7 @@ nav{
     }
     .hover_menu{
       position: relative;
-      &:hover{
-        .ul_menu{
-          visibility: visible;
-          z-index: 1;
-          opacity: 1;
-          right: -30px;
-        }
-        >a{
-          color: $color_3;
 
-        }
-            a{
-              &::after{
-                color: $color_3;
-
-            }
-            }
-      }
       >a{
         &::after{
           content: "\";
@@ -86,14 +69,6 @@ nav{
           transition: .5s;
       }
       }
-      // &::after{
-      //   content: "\";
-      //   font-family: "line Awesome Free";
-      //   font-weight: 900;
-      //   color: $color_1;
-      //   font-size: $font_s - 6;
-      //   margin-inline-start: 2px;
-      // }
         .ul_menu{
           position: absolute;
           background-color: $color_1;
@@ -104,19 +79,16 @@ nav{
           display: flex;
           flex-wrap: wrap;
           width: 492px;
-          // height: 290px;
           transition: .5s;
           visibility: hidden;
           z-index: -1;
           box-shadow: 0px 0px 5px 0px #0000001a;
           opacity: 0;
           @include en{
-            left: 0px;
-
+            left: -70px;
           }
           @include ar{
             right: -70px;
-
           }
           &::after{
             content: '';
@@ -158,13 +130,41 @@ nav{
             }
           }
         }
-
+        &:hover{
+          .ul_menu{
+            visibility: visible;
+            z-index: 1;
+            opacity: 1;
+            @include ar {
+            right: -30px;
+              
+            }
+            @include en {
+              left: 0px;
+                
+              }
+          }
+          >a{
+            color: $color_3;
+  
+          }
+              a{
+                &::after{
+                  color: $color_3;
+              }
+              }
+        }
     }
     .hover_m2{
 
       &:hover{
         .ul_menu{
-          right: -15pxpx;
+          @include ar{
+            right: -15px;
+          }
+          @include en{
+            left: -15px;
+          }
           li{
             width: 100%;
           }
