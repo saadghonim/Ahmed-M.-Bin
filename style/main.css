@@ -1248,7 +1248,6 @@ nav .ul_nav .hover_menu .ul_menu {
   height: auto;
   padding: 25px 30px;
   top: 55px;
-  right: -70px;
   text-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1265,6 +1264,14 @@ nav .ul_nav .hover_menu .ul_menu {
   opacity: 0;
 }
 
+html[dir="ltr"] nav .ul_nav .hover_menu .ul_menu {
+  left: 0px;
+}
+
+html[dir="rtl"] nav .ul_nav .hover_menu .ul_menu {
+  right: -70px;
+}
+
 nav .ul_nav .hover_menu .ul_menu::after {
   content: '';
   display: block;
@@ -1275,7 +1282,6 @@ nav .ul_nav .hover_menu .ul_menu::after {
   border-bottom: 8px solid #ffffff;
   position: absolute;
   top: -8px;
-  left: 91%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-transition: 0.3s;
@@ -1305,6 +1311,11 @@ nav .ul_nav .hover_menu .ul_menu > li a {
   text-transform: capitalize;
 }
 
+html[dir="ltr"] nav .ul_nav .hover_menu .ul_menu > li a {
+  line-height: 1.3;
+  margin-bottom: 5px;
+}
+
 nav .ul_nav .hover_menu .ul_menu > li a:hover {
   color: #9b702a;
 }
@@ -1315,6 +1326,11 @@ nav .ul_nav .hover_m2:hover .ul_menu {
 
 nav .ul_nav .hover_m2:hover .ul_menu li {
   width: 100%;
+}
+
+nav .ul_nav .hover_m2:hover > a::after {
+  content: "\";
+  color: #9b702a;
 }
 
 nav .ul_nav .hover_m2 .ul_menu {
@@ -1939,9 +1955,16 @@ nav .ul_nav .hover_m2 .ul_menu li {
 .contact_page_page .contact_page .from_group .gro_select i {
   position: absolute;
   top: 50px;
-  left: 12px;
   color: #f2f2f2;
   font-size: 16px;
+}
+
+html[dir="ltr"] .contact_page_page .contact_page .from_group .gro_select i {
+  right: 12px;
+}
+
+html[dir="rtl"] .contact_page_page .contact_page .from_group .gro_select i {
+  left: 12px;
 }
 
 .contact_page_page .contact_page .from_group label {

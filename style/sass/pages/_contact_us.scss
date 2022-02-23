@@ -14,9 +14,14 @@
 				i{
 					position: absolute;
 					top: 50px;
-					left: 12px;
 					color: $color_6;
 					font-size: $font_s;
+					@include en{
+					right: 12px;
+					}
+					@include ar{
+						left: 12px;
+						}
 				}
 			}
 				label{
